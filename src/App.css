@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.4;
+  color: #444;
+  background: #fff;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.inner {
+  width: 100%;
+  padding: 8rem 10px 4rem;
+}
+
+.form-container {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  border-radius: calc(0.5 * 100px);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.38);
+  justify-content: space-evenly;
+}
+
+.input-text {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 85%;
+  padding-right: 5px;
+  padding-left: 10px;
+  border-radius: calc(0.5 * 100px);
+}
+
+.head {
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+  opacity: 0.4;
+}
+
+.input-text::placeholder {
+  color: #000;
+}
+
+.input-submit {
+  background: transparent;
+  color: #5b5b5b;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.input-text,
+.input-submit {
+  height: 45px;
+  outline: none;
+  border: none;
+}
+
+.list-inner-container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+  margin: 8px;
+}
+
+.list-item {
+  font-size: 15px;
+  background: #f1f3f4;
+  border: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  list-style: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 100px;
+  height: 50px;
+  width: 100%;
+  margin: -1px 0 0 10px;
+}
+
+.btn-delete {
+  align-self: center;
+  border-radius: 50px;
+  outline: none;
+  box-shadow: 2px 5px 5px 4px;
+  border: none;
+  padding: 5px;
+  margin-left: -60px;
+  cursor: pointer;
+}
+
+.active-link {
+  color: orangered;
+  text-decoration: underline;
+}
